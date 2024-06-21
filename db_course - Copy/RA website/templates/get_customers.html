@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Husky Image</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles_get_customers.css') }}">
+</head>
+<body>
+    <div class="center">
+        <h1>Add Customer Page</h1>
+    </div>
+    <div>
+        <ul>
+            <li><a href="{{ url_for('home_page') }}">Home Page</a></li><br>
+            <p></p>
+        </ul>
+        <p></p>
+		<img src="{{ url_for('static', filename='customer_image1.jpg') }}" class="small-image"/>
+        <img src="{{ url_for('static', filename='customer_image2.webp') }}" class="small-image"/>
+        <p></p>
+    </div>
+    <div>
+        <h2>Add Customer</h2>
+        <form method="POST">
+            <label>First Name:</label>
+            <input type="text" name="customer_first_name"><br><br>
+            <label>Last Name:</label>
+            <input type="text" name="customer_last_name"><br><br>
+            <label>Gender:</label>
+            <input type="radio" name="customer_gender" value="M">Male
+            <input type="radio" name="customer_gender" value="F">Female<br><br>
+            <label for="customer_dob">Date of Birth:</label>
+            <input type="text" name="customer_dob"><br><br>
+            <input type="submit" value="Add customer">
+        </form>
+    </div>
+</body>
+</html>

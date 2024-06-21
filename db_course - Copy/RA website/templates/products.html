@@ -1,0 +1,18 @@
+<html>
+<head>
+    <div class="center">
+        <h1>Products Page</h1>
+    </div>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles_products.css') }}">
+</head>
+<body>
+    <ul>
+        <li><a href="{{ url_for('home_page') }}">Home Page</a></li><br>
+        <p></p>
+    </ul>
+    <h2>Click for Get Products Page</h2>
+    <ul>
+		<li><a href="{{ url_for('get_products') }}">Get Products</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Husky Image</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles_get_products.css') }}">
+</head>
+<body>
+    <div class="center">
+        <h1>Get Product Page</h1>
+    </div>
+    <div>
+        <ul>
+            <li><a href="{{ url_for('home_page') }}">Home Page</a></li><br>
+            <p></p>
+        </ul>
+        <p></p>
+		<img src="{{ url_for('static', filename='product_image1.avif') }}" class="small-image"/>
+        <img src="{{ url_for('static', filename='product_image2.webp') }}" class="small-image"/>
+        <p></p>
+    </div>
+    <div>
+        <h2>Fill This form</h2>
+        <form method="POST">
+        <label>Product ID:</label>
+        <input type="text" name="product_id">
+        <input type="submit" value="Get product">
+        </form>
+        {% if product_info %}
+        <h2>Product Information</h2>
+        <h2>{{product_info | safe}}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>

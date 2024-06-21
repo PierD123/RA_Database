@@ -1,0 +1,19 @@
+
+h1{color:#353535; font-size:45pt; text-align:center ; /*background-color:#DDDDDD;*/ text-decoration: underline; margin-top: 60px; display: inline-block; font-style: italic;}
+h2{color:#800000ac; font-size:25pt; margin-top: 0px; font-style: italic;}
+
+.h1-container {
+    text-align: center; 
+}
+
+.center {
+    display: flex;
+    justify-content: center; /* Centers children horizontally within .center */
+    margin: 0px 0; /* Adds some space between .center blocks */
+}
+
+.center > div {
+    margin: 50px; /* Adds space between the divs inside .center */
+    text-align: center; /* Centers text within each div */
+}
+
